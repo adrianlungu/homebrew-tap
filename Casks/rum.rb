@@ -1,5 +1,5 @@
 cask "rum" do
-	version "1.0.0"
+	version "1.0.1"
 	sha256 "REPLACE_WITH_ACTUAL_SHA256"
 
 	url "https://github.com/adrianlungu/rum/releases/download/v#{version}/Rum.zip"
