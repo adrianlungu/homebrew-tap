@@ -12,6 +12,11 @@ cask "rum" do
 
 	app "Rum.app"
 
+	postflight do
+      system_command "/usr/bin/xattr",
+                     args: ["-cr", "#{appdir}/Rum.app"]
+    end
+
 	zap trash: [
 		"~/Library/Application Support/com.adrianlungu.rum",
 		"~/Library/Containers/com.adrianlungu.rum",
